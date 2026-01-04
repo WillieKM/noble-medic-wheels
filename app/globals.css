@@ -119,5 +119,29 @@ section {
   padding-left: 20px;
   line-height: 1.6;
 }
+.broker-section {
+  margin-top: 50px;
+}
+
+.broker-section h2 {
+  margin-bottom: 10px;
+}
+
+.broker-section ul {
+  padding-left: 20px;
+  line-height: 1.6;
+}
+
+.columns {
+  columns: 2;
+  max-width: 400px;
+}
+
+.note {
+  font-size: 0.9rem;
+  color: #555;
+  margin-top: 8px;
+}
+
 
 
