@@ -143,5 +143,46 @@ section {
   margin-top: 8px;
 }
 
+.contact-form {
+  display: grid;
+  gap: 20px;
+  max-width: 600px;
+  margin: 0 auto 40px;
+}
+
+.contact-form label {
+  display: flex;
+  flex-direction: column;
+  font-weight: 600;
+  color: #0A1A2F;
+}
+
+.contact-form input,
+.contact-form select,
+.contact-form textarea {
+  margin-top: 6px;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 1rem;
+}
+
+.submitted-message {
+  text-align: center;
+  padding: 40px 20px;
+  background: #e8f7f5;
+  border-radius: 8px;
+  margin-bottom: 40px;
+}
+
+.contact-info {
+  margin-top: 40px;
+  text-align: center;
+}
+
+.contact-info p {
+  margin: 6px 0;
+}
+
 
 
