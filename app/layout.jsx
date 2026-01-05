@@ -5,7 +5,7 @@ import Footer from '../components/Footer';
 export const metadata = {
   title: "Noble Medic Wheels – NEMT Services in King & Pierce County",
   description: "Safe, reliable, and compassionate Non-Emergency Medical Transportation (NEMT) serving King & Pierce County.",
-  metadataBase: new URL("https://your-domain.com"),
+  metadataBase: new URL("https://noblemedicwheels.com"),
   openGraph: {
     title: "Noble Medic Wheels – NEMT Services",
     description: "Contract-ready, compliant NEMT provider serving King & Pierce County.",
