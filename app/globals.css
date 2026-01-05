@@ -286,6 +286,94 @@ section {
   font-size: 0.9rem;
   opacity: 0.8;
 }
+:root {
+  --color-primary: #0E8A7D;      /* Emerald/Teal – healthcare, calm */
+  --color-secondary: #0A1A2F;    /* Deep Navy – trust, professionalism */
+  --color-accent: #D4A537;       /* Gold – noble, premium */
+  --color-light: #f7f9fc;        /* Background */
+  --color-dark: #1C1C1C;
+  --color-text: #0A1A2F;
+  --color-muted: #555;
+  --color-white: #ffffff;
+}
+:root {
+  --space-xs: 8px;
+  --space-sm: 16px;
+  --space-md: 24px;
+  --space-lg: 40px;
+  --space-xl: 60px;
+}
+body {
+  font-family: 'Segoe UI', 'Helvetica Neue', sans-serif;
+  font-size: 16px;
+  line-height: 1.6;
+  color: var(--color-text);
+  background: var(--color-light);
+}
+
+h1 {
+  font-size: 2.4rem;
+  font-weight: 700;
+  margin-bottom: var(--space-sm);
+}
+
+h2 {
+  font-size: 1.8rem;
+  font-weight: 600;
+  margin-bottom: var(--space-sm);
+}
+
+h3 {
+  font-size: 1.4rem;
+  font-weight: 600;
+  margin-bottom: var(--space-xs);
+}
+
+p {
+  font-size: 1rem;
+  margin-bottom: var(--space-sm);
+}
+
+.text-center {
+  text-align: center;
+}
+
+.text-muted {
+  color: var(--color-muted);
+}
+
+.bg-primary {
+  background: var(--color-primary);
+  color: var(--color-white);
+}
+
+.bg-secondary {
+  background: var(--color-secondary);
+  color: var(--color-white);
+}
+
+.btn {
+  display: inline-block;
+  padding: 12px 24px;
+  border-radius: 6px;
+  text-decoration: none;
+  font-weight: 600;
+  transition: background 0.3s ease;
+}
+
+.btn-primary {
+  background: var(--color-primary);
+  color: var(--color-white);
+}
+
+.btn-secondary {
+  background: var(--color-white);
+  color: var(--color-secondary);
+  border: 2px solid var(--color-secondary);
+}
+
+
+
 
 
 
