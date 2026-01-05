@@ -1,4 +1,12 @@
+"use client";
 
+import { useState } from "react";
+
+export default function ContactPage() {
+  const [submitted, setSubmitted] = useState(false);
+
+  // ... rest of your form
+}
 export default function ContactPage() {
   const [submitted, setSubmitted] = useState(false);
 
