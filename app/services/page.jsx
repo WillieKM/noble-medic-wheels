@@ -1,102 +1,116 @@
-// This is a SERVER COMPONENT (no "use client")
-
-export const metadata = {
-  title: "Services – Noble Medic Wheels",
-  description:
-    "Non-Emergency Medical Transportation services including ambulatory, wheelchair, recurring appointments, and hospital discharge.",
-};
-
 export default function ServicesPage() {
   return (
-    <section className="page page-services">
-      <div className="page-header">
-        <h1>Our Services</h1>
-        <p>
-          Noble Medic Wheels provides safe, reliable, and compassionate Non-Emergency Medical Transportation
-          (NEMT) for riders across King & Pierce County. We support individuals, families, and healthcare
-          partners with dependable transportation to essential medical care.
-        </p>
-      </div>
+    <main className="services-page">
 
-      <div className="service-grid">
+      {/* PAGE INTRO */}
+      <section className="services-hero">
+        <h1>Our NEMT Services</h1>
+        <p>
+          Noble Medic Wheels provides safe, reliable non-emergency medical
+          transportation for ambulatory and wheelchair riders. We support
+          one-time and recurring medical trips across King & Pierce Counties.
+        </p>
+
+        <div className="cta-group">
+          <a href="/contact" className="btn-primary">Request a Ride</a>
+          <a href="tel:2533749087" className="btn-secondary">Call Now</a>
+        </div>
+      </section>
+
+      {/* SERVICES LIST */}
+      <section className="services-list">
+
         <div className="service-card">
           <h2>Ambulatory Transportation</h2>
           <p>
-            Comfortable, safe rides for passengers who can walk independently or with minimal assistance.
-            Ideal for routine medical appointments, follow-ups, and outpatient visits.
+            Safe and comfortable transportation for riders who walk independently
+            or with minimal assistance. Our vehicles offer easy entry, climate
+            control, and door-to-door service to help you arrive on time and
+            stress-free.
           </p>
-          <ul>
-            <li>Door-to-door assistance</li>
-            <li>Scheduled pick-up and drop-off</li>
-            <li>Clean, comfortable vehicles</li>
-          </ul>
         </div>
 
         <div className="service-card">
           <h2>Wheelchair Transportation</h2>
           <p>
-            ADA-compliant vehicles equipped with ramps and securement systems to safely transport wheelchair
-            users to and from their appointments.
+            Wheelchair-accessible vans equipped with hydraulic lifts and securement
+            systems for safe transport. Our trained drivers assist with boarding,
+            positioning, and unloading to ensure a dignified and comfortable ride.
           </p>
-          <ul>
-            <li>Wheelchair lifts and securement</li>
-            <li>Trained drivers for mobility assistance</li>
-            <li>Extra time and care for loading and unloading</li>
-          </ul>
         </div>
 
         <div className="service-card">
           <h2>Recurring Medical Appointments</h2>
           <p>
-            Reliable transportation for ongoing care needs such as dialysis, physical therapy, wound care,
-            and specialist visits.
+            Reliable scheduled rides for dialysis, physical therapy, and ongoing
+            treatments. We prioritize punctuality and consistency so riders never
+            miss critical care.
           </p>
-          <ul>
-            <li>Pre-scheduled recurring rides</li>
-            <li>Consistent timing and routing</li>
-            <li>Ideal for long-term care plans</li>
-          </ul>
         </div>
 
         <div className="service-card">
           <h2>Hospital Discharge Transportation</h2>
           <p>
-            Safe, timely transport for patients being discharged from hospitals, rehabilitation centers, or
-            emergency departments.
+            Safe transportation home following hospital discharge, rehabilitation,
+            or clinic visits. We provide patient, careful service for riders who may
+            need extra time or support.
           </p>
-          <ul>
-            <li>Coordinated pick-up times</li>
-            <li>Door-to-door support</li>
-            <li>Space for caregivers or family</li>
-          </ul>
         </div>
 
         <div className="service-card">
           <h2>Specialty & Post-Procedure Rides</h2>
           <p>
-            Transportation for riders with mobility challenges or special instructions from healthcare
-            providers, including post-procedure follow-ups.
+            Transportation for outpatient procedures and specialty appointments
+            when a safe, non-emergency ride is required. Ideal for riders recovering
+            from treatment or needing additional assistance.
           </p>
-          <ul>
-            <li>Gentle handling and extra care</li>
-            <li>Clear communication with riders and families</li>
-            <li>Flexible scheduling options</li>
-          </ul>
         </div>
-      </div>
 
-      <div className="page-cta">
-        <h2>Need Transportation for Medical Care?</h2>
-        <p>
-          Whether you're a rider, caregiver, or healthcare partner, Noble Medic Wheels is ready to help
-          you get to your appointments safely and on time.
+        <p className="services-helper">
+          Need help choosing the right service? Call us and we’ll guide you based
+          on mobility needs and appointment type.
         </p>
-        <div className="cta-buttons">
+
+      </section>
+
+      {/* SAFETY SECTION */}
+      <section className="safety-standards">
+        <h2>Safety & Care Standards</h2>
+        <ul>
+          <li>ADA-compliant vehicles and wheelchair securement systems</li>
+          <li>Trained, professional, and courteous drivers</li>
+          <li>Daily vehicle cleaning and disinfection</li>
+          <li>High-touch surfaces sanitized between every ride</li>
+          <li>Climate-controlled vehicles for year-round comfort</li>
+          <li>Door-to-door assistance when needed</li>
+        </ul>
+      </section>
+
+      {/* REFERRAL / MEDICAL PARTNERS */}
+      <section className="referral-info">
+        <h2>For Clinics, Case Managers, and Caregivers</h2>
+        <p>
+          We assist with transportation coordination for recurring appointments
+          and discharge rides. If you’re scheduling on behalf of a patient, our
+          team can help confirm mobility needs, pickup instructions, and timing to
+          reduce missed appointments.
+        </p>
+      </section>
+
+      {/* FINAL CTA */}
+      <section className="final-cta">
+        <h2>Request a Ride Today</h2>
+        <p>
+          Call us or submit a request online. Scheduled and short-notice rides
+          available when possible.
+        </p>
+
+        <div className="cta-group">
           <a href="/contact" className="btn-primary">Request a Ride</a>
-          <a href="/brokers" className="btn-secondary">For Brokers</a>
+          <a href="tel:2533749087" className="btn-secondary">Call Now</a>
         </div>
-      </div>
-    </section>
+      </section>
+
+    </main>
   );
 }
-
