@@ -1,6 +1,9 @@
+// This is a SERVER COMPONENT (no "use client")
+
 export const metadata = {
   title: "Services – Noble Medic Wheels",
-  description: "Non-Emergency Medical Transportation services in King & Pierce County.",
+  description:
+    "Non-Emergency Medical Transportation services including ambulatory, wheelchair, recurring appointments, and hospital discharge.",
 };
 
 export default function ServicesPage() {
@@ -10,7 +13,7 @@ export default function ServicesPage() {
         <h1>Our Services</h1>
         <p>
           Noble Medic Wheels provides safe, reliable, and compassionate Non-Emergency Medical Transportation
-          (NEMT) for riders across King &amp; Pierce County. We support individuals, families, and healthcare
+          (NEMT) for riders across King & Pierce County. We support individuals, families, and healthcare
           partners with dependable transportation to essential medical care.
         </p>
       </div>
@@ -23,8 +26,8 @@ export default function ServicesPage() {
             Ideal for routine medical appointments, follow-ups, and outpatient visits.
           </p>
           <ul>
-            <li>Door-to-door assistance as needed</li>
-            <li>Scheduled pick-up and drop-off times</li>
+            <li>Door-to-door assistance</li>
+            <li>Scheduled pick-up and drop-off</li>
             <li>Clean, comfortable vehicles</li>
           </ul>
         </div>
@@ -62,9 +65,9 @@ export default function ServicesPage() {
             emergency departments.
           </p>
           <ul>
-            <li>Coordinated pick-up times with facilities</li>
+            <li>Coordinated pick-up times</li>
             <li>Door-to-door support</li>
-            <li>Space for caregivers or family when needed</li>
+            <li>Space for caregivers or family</li>
           </ul>
         </div>
 
@@ -85,7 +88,7 @@ export default function ServicesPage() {
       <div className="page-cta">
         <h2>Need Transportation for Medical Care?</h2>
         <p>
-          Whether you&apos;re a rider, caregiver, or healthcare partner, Noble Medic Wheels is ready to help
+          Whether you're a rider, caregiver, or healthcare partner, Noble Medic Wheels is ready to help
           you get to your appointments safely and on time.
         </p>
         <div className="cta-buttons">
@@ -96,5 +99,4 @@ export default function ServicesPage() {
     </section>
   );
 }
-
 
