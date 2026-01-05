@@ -1,11 +1,3 @@
-"use client";
-
-import { useState } from "react";
-
-export const metadata = {
-  title: "Contact – Noble Medic Wheels",
-  description: "Request a ride or contact Noble Medic Wheels for NEMT services.",
-};
 
 export default function ContactPage() {
   const [submitted, setSubmitted] = useState(false);
