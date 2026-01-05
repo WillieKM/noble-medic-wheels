@@ -1,4 +1,11 @@
 "use client";
+
+import BrokerSection from "../../components/BrokerSection";
+
+export default function BrokersPage() {
+  return <BrokerSection />;
+}
+
 export const metadata = {
   title: "For Brokers – Noble Medic Wheels",
   description: "Contract-ready NEMT provider with full compliance, insurance, and operational transparency.",
