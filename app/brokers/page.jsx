@@ -1,4 +1,4 @@
-
+"use client";
 export const metadata = {
   title: "For Brokers – Noble Medic Wheels",
   description: "Contract-ready NEMT provider with full compliance, insurance, and operational transparency.",
