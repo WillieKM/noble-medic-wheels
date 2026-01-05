@@ -1,10 +1,3 @@
-export const dynamic = "force-dynamic";
-
 export default function ContactPage() {
-  return (
-    <main>
-      <h1>Contact</h1>
-      <p>Please reach out to us.</p>
-    </main>
-  );
+  return <div>Contact OK</div>;
 }
