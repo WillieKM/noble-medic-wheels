@@ -32,6 +32,7 @@ export default function FleetPage() {
           <img src="/fleet2.jpg" alt="Ambulatory transport vehicle" />
           <h2>Ambulatory Transport Vehicles</h2>
           <p>
+            
             Comfortable seating, climate control, and easy entry for riders who walk independently or with
             assistance.
           </p>
