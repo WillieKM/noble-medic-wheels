@@ -1,6 +1,9 @@
+// This is a SERVER COMPONENT (no "use client")
+
 export const metadata = {
   title: "Fleet – Noble Medic Wheels",
-  description: "Explore our ADA-compliant, professionally maintained NEMT vehicles.",
+  description:
+    "Explore our ADA-compliant, professionally maintained NEMT vehicles serving King & Pierce County.",
 };
 
 export default function FleetPage() {
@@ -10,7 +13,7 @@ export default function FleetPage() {
         <h1>Our Fleet</h1>
         <p>
           Noble Medic Wheels operates a clean, safe, and ADA-compliant fleet designed to meet the needs of riders
-          across King &amp; Pierce County. Every vehicle is professionally maintained, sanitized, and equipped
+          across King & Pierce County. Every vehicle is professionally maintained, sanitized, and equipped
           for comfort and accessibility.
         </p>
       </div>
@@ -31,14 +34,6 @@ export default function FleetPage() {
           <p>
             Comfortable seating, climate control, and easy entry for riders who walk independently or with
             assistance.
-          </p>
-        </div>
-
-        <div className="fleet-card">
-          <img src="/fleet3.jpg" alt="Clean interior of NEMT vehicle" />
-          <h2>Sanitized Interiors</h2>
-          <p>
-            All vehicles are cleaned and disinfected daily, with high-touch surfaces sanitized between rides.
           </p>
         </div>
       </div>
@@ -64,5 +59,4 @@ export default function FleetPage() {
     </section>
   );
 }
-
 
