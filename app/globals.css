@@ -372,6 +372,28 @@ p {
   border: 2px solid var(--color-secondary);
 }
 
+.service-area-layout {
+  display: grid;
+  gap: var(--space-lg);
+  grid-template-columns: minmax(0, 1fr);
+}
+
+.service-area-list {
+  padding-left: 20px;
+  line-height: 1.6;
+}
+
+.service-area-map {
+  width: 100%;
+}
+
+@media (min-width: 768px) {
+  .service-area-layout {
+    grid-template-columns: 1.1fr 1.2fr;
+    align-items: flex-start;
+  }
+}
+
 
 
 
