@@ -8,7 +8,7 @@
   --color-light: #f7f9fc;
   --color-dark: #1C1C1C;
   --color-text: #0A1A2F;
-  --color-muted: #555;
+  --color-muted: #475569;
   --color-white: #ffffff;
 
   --space-xs: 8px;
@@ -19,7 +19,7 @@
 }
 
 /* =========================================================
-   GLOBAL RESET & BASE
+   RESET & BASE
    ========================================================= */
 *,
 *::before,
@@ -35,17 +35,13 @@ body {
 }
 
 body {
-  font-family: "Segoe UI", "Helvetica Neue", Arial, sans-serif;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
+    Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue",
+    sans-serif;
   font-size: 16px;
   line-height: 1.6;
   background: var(--color-light);
   color: var(--color-text);
-}
-
-img {
-  display: block;
-  max-width: 100%;
-  height: auto;
 }
 
 /* =========================================================
@@ -54,42 +50,45 @@ img {
 .container {
   max-width: 1200px;
   margin: 0 auto;
-  padding: 0 var(--space-md);
+  padding: 2rem 1.25rem;
   width: 100%;
 }
 
 .page {
   width: 100%;
-  padding: var(--space-xl) 0;
 }
 
-section {
-  padding: var(--space-lg) 0;
+.page > section {
+  margin-bottom: 3rem;
+}
+
+.page > section:last-child {
+  margin-bottom: 0;
 }
 
 /* =========================================================
    TYPOGRAPHY
    ========================================================= */
 h1 {
-  font-size: 2.4rem;
+  font-size: clamp(2rem, 4vw, 2.6rem);
   font-weight: 700;
-  margin-bottom: var(--space-sm);
+  line-height: 1.2;
 }
 
 h2 {
-  font-size: 1.8rem;
+  font-size: clamp(1.4rem, 3vw, 1.8rem);
   font-weight: 600;
-  margin-bottom: var(--space-sm);
 }
 
 h3 {
-  font-size: 1.4rem;
+  font-size: 1.25rem;
   font-weight: 600;
-  margin-bottom: var(--space-xs);
 }
 
 p {
   margin-bottom: var(--space-sm);
+  max-width: 70ch;
+  line-height: 1.65;
 }
 
 .text-center {
@@ -98,6 +97,63 @@ p {
 
 .text-muted {
   color: var(--color-muted);
+}
+
+/* =========================================================
+   HERO
+   ========================================================= */
+.hero {
+  background: var(--color-secondary);
+  color: white;
+  text-align: center;
+  padding: clamp(4rem, 10vw, 7rem) 0;
+}
+
+.hero h1 {
+  max-width: 16ch;
+  margin: 0 auto 1rem;
+}
+
+.hero p {
+  max-width: 60ch;
+  margin: 0 auto 2rem;
+  opacity: 0.95;
+}
+
+/* =========================================================
+   BUTTONS
+   ========================================================= */
+.btn,
+.btn-primary,
+.btn-secondary {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  padding: 0.75rem 1.5rem;
+  border-radius: 6px;
+  font-weight: 600;
+  text-decoration: none;
+  transition: all 0.2s ease;
+}
+
+.btn-primary {
+  background: var(--color-primary);
+  color: var(--color-white);
+}
+
+.btn-primary:hover {
+  background: #0b7469;
+}
+
+.btn-secondary {
+  background: var(--color-white);
+  color: var(--color-secondary);
+  border: 2px solid var(--color-secondary);
+}
+
+.btn-secondary:hover {
+  background: #f1f5f9;
 }
 
 /* =========================================================
@@ -177,30 +233,6 @@ p {
 }
 
 /* =========================================================
-   BUTTONS
-   ========================================================= */
-.btn,
-.btn-primary,
-.btn-secondary {
-  display: inline-block;
-  padding: 12px 24px;
-  border-radius: 6px;
-  text-decoration: none;
-  font-weight: 600;
-}
-
-.btn-primary {
-  background: var(--color-primary);
-  color: var(--color-white);
-}
-
-.btn-secondary {
-  background: var(--color-white);
-  color: var(--color-secondary);
-  border: 2px solid var(--color-secondary);
-}
-
-/* =========================================================
    PAGE ELEMENTS
    ========================================================= */
 .page-header {
@@ -209,22 +241,12 @@ p {
 }
 
 .page-header p {
-  max-width: 800px;
   margin: 0 auto;
-}
-
-.page-cta {
-  text-align: center;
-  margin-top: var(--space-xl);
-}
-
-.page-cta p {
-  max-width: 700px;
-  margin: 0 auto var(--space-md);
+  max-width: 800px;
 }
 
 /* =========================================================
-   GRIDS
+   GRIDS & CARDS
    ========================================================= */
 .service-grid,
 .fleet-grid {
@@ -233,12 +255,13 @@ p {
   grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
 }
 
+.card,
+.service-card,
 .fleet-card {
   background: white;
   border-radius: 8px;
   padding: var(--space-md);
   box-shadow: 0 2px 8px rgba(0,0,0,0.05);
-  text-align: center;
 }
 
 /* =========================================================
@@ -258,7 +281,7 @@ p {
 }
 
 /* =========================================================
-   CONTACT
+   CONTACT FORM
    ========================================================= */
 .contact-form {
   max-width: 600px;
@@ -276,9 +299,17 @@ p {
 .contact-form input,
 .contact-form select,
 .contact-form textarea {
-  padding: 12px;
+  padding: 0.75rem;
   border-radius: 6px;
-  border: 1px solid #ccc;
+  border: 1px solid #cbd5e1;
+  font-size: 1rem;
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus,
+.contact-form select:focus {
+  outline: 3px solid #0E8A7D55;
+  border-color: var(--color-primary);
 }
 
 .submitted-message {
@@ -318,4 +349,19 @@ p {
   margin-top: var(--space-md);
   font-size: 0.9rem;
   opacity: 0.8;
+}
+
+/* =========================================================
+   ACCESSIBILITY
+   ========================================================= */
+a:focus-visible,
+button:focus-visible {
+  outline: 3px solid var(--color-primary);
+  outline-offset: 2px;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
 }
