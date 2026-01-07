@@ -1,7 +1,7 @@
+"use client";
 
+import { useState } from "react";
 
-  // ... rest of your form
-}
 export default function ContactPage() {
   const [submitted, setSubmitted] = useState(false);
 
@@ -60,7 +60,9 @@ export default function ContactPage() {
             <textarea name="notes" rows="4"></textarea>
           </label>
 
-          <button type="submit" className="btn-primary">Submit Request</button>
+          <button type="submit" className="btn-primary">
+            Submit Request
+          </button>
         </form>
       ) : (
         <div className="submitted-message">
@@ -78,4 +80,3 @@ export default function ContactPage() {
     </section>
   );
 }
-
