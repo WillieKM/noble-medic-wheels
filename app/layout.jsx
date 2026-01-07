@@ -6,11 +6,12 @@
   width: 100%;
 }
 
-/* Page sections */
+/* Page wrapper */
 .page {
   width: 100%;
 }
 
+/* Page header */
 .page-header {
   margin-bottom: 2rem;
 }
@@ -20,6 +21,7 @@
   margin-bottom: 0.75rem;
 }
 
+/* Vertical rhythm (top-level only) */
 .page > section {
   margin-bottom: 3rem;
 }
@@ -27,7 +29,6 @@
 .page > section:last-child {
   margin-bottom: 0;
 }
-
 
 /* Body defaults */
 html,
