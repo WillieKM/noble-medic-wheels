@@ -365,3 +365,26 @@ img {
   max-width: 100%;
   height: auto;
 }
+/* ===== Sticky CTA ===== */
+.sticky-cta {
+  position: fixed;
+  bottom: 24px;
+  right: 24px;
+  background: var(--color-primary);
+  color: white;
+  padding: 14px 20px;
+  border-radius: 999px;
+  font-weight: 700;
+  text-decoration: none;
+  box-shadow: 0 8px 24px rgba(0,0,0,0.15);
+  z-index: 999;
+}
+
+@media (max-width: 768px) {
+  .sticky-cta {
+    left: 16px;
+    right: 16px;
+    bottom: 16px;
+    text-align: center;
+  }
+}
