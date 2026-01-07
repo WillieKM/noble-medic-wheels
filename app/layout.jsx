@@ -20,10 +20,14 @@
   margin-bottom: 0.75rem;
 }
 
-.page section,
-.page > div {
+.page > section {
   margin-bottom: 3rem;
 }
+
+.page > section:last-child {
+  margin-bottom: 0;
+}
+
 
 /* Body defaults */
 html,
