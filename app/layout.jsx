@@ -36,7 +36,6 @@ export default function RootLayout({ children }) {
     <html lang="en">
       import StickyCTA from "../components/StickyCTA";
 
-<StickyCTA />
 
       <body>
 import Schema from "../components/Schema";
