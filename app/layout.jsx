@@ -1,12 +1,11 @@
 import "./globals.css";
-import Header from "@/components/Header";
-import Footer from "@/components/Footer";
+import Header from "../components/Header";
+import Footer from "../components/Footer";
 
 export const metadata = {
-  title: "Noble Medic Wheels – NEMT Services in King & Pierce County",
+  title: "Noble Medic Wheels – NEMT Services",
   description:
-    "Safe, reliable, and compassionate Non-Emergency Medical Transportation (NEMT) serving King & Pierce County.",
-  metadataBase: new URL("https://noblemedicwheels.com"),
+    "Safe, reliable Non-Emergency Medical Transportation serving King & Pierce County.",
 };
 
 export default function RootLayout({ children }) {
