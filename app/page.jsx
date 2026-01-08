@@ -1,4 +1,4 @@
-import Schema from "@/components/Schema";
+
 
 export default function HomePage() {
   return (
