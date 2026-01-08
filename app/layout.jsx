@@ -1,6 +1,7 @@
 import "./globals.css";
 import Header from "../components/Header";
 import Footer from "../components/Footer";
+import StickyCTA from "../components/StickyCTA";
 
 export const metadata = {
   title: "Noble Medic Wheels – NEMT Services in King & Pierce County",
@@ -34,24 +35,13 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      import StickyCTA from "../components/StickyCTA";
-
-
       <body>
-import Schema from "../components/Schema";
-
-<body>
-
-  <Header />
-  <main className="container">{children}</main>
-  <Footer />
-</body>
-
-        
         <Header />
+
         <main className="container">{children}</main>
+
+        <StickyCTA />
         <Footer />
-        
       </body>
     </html>
   );
