@@ -41,7 +41,7 @@ export default function RootLayout({ children }) {
 import Schema from "../components/Schema";
 
 <body>
-  <Schema />
+
   <Header />
   <main className="container">{children}</main>
   <Footer />
