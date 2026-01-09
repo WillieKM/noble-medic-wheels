@@ -1,11 +1,12 @@
 "use client";
 
 import StickyCTA from "./StickyCTA";
+import Schema from "./Schema";
 
-export default function ClientShell({ children }) {
+export default function ClientShell() {
   return (
     <>
-      {children}
+      <Schema />
       <StickyCTA />
     </>
   );
