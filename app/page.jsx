@@ -1,12 +1,11 @@
-export const metadata = {
-  title: "Home – Noble Medic Wheels",
-};
+import ClientShell from "../components/ClientShell";
+import Hero from "../components/Hero";
 
 export default function HomePage() {
   return (
-    <section className="page">
-      <h1>Noble Medic Wheels</h1>
-      <p>Reliable, compliant Non-Emergency Medical Transportation.</p>
-    </section>
+    <>
+      <ClientShell />
+      <Hero />
+    </>
   );
 }
