@@ -31,11 +31,7 @@ export default function ContactForm() {
 
           <label>
             Appointment Date & Time
-            <input
-              type="datetime-local"
-              name="appointment_time"
-              required
-            />
+            <input type="datetime-local" name="appointment_time" required />
           </label>
 
           <label>
@@ -54,7 +50,7 @@ export default function ContactForm() {
 
           <label>
             Additional Notes (optional)
-            <textarea name="notes" rows="4" />
+            <textarea name="notes" rows="4"></textarea>
           </label>
 
           <button type="submit" className="btn-primary">
@@ -64,10 +60,7 @@ export default function ContactForm() {
       ) : (
         <div className="submitted-message">
           <h2>Thank You!</h2>
-          <p>
-            Your ride request has been submitted. Our team will contact you shortly
-            to confirm details.
-          </p>
+          <p>Your ride request has been submitted.</p>
         </div>
       )}
     </>
