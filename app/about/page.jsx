@@ -1,44 +1,55 @@
 export const metadata = {
-  title: "About Us – Noble Medic Wheels",
+  title: "About Noble Medic Wheels | Trusted NEMT Provider",
   description:
-    "Learn about Noble Medic Wheels, our mission, values, and commitment to safe, reliable Non-Emergency Medical Transportation in King & Pierce County.",
+    "Learn about Noble Medic Wheels, a reliable and compassionate Non-Emergency Medical Transportation provider serving King & Pierce County.",
 };
 
 export default function AboutPage() {
   return (
-    <section className="page">
-      <div className="page-header">
+    <section className="page container">
+      <header className="page-header">
         <h1>About Noble Medic Wheels</h1>
-        <p>
-          Noble Medic Wheels is a locally operated Non-Emergency Medical Transportation (NEMT)
-          provider dedicated to safety, dignity, and reliability.
+        <p className="text-muted">
+          Compassionate, reliable non-emergency medical transportation built on
+          dignity, safety, and trust.
         </p>
-      </div>
+      </header>
 
       <section>
-        <h2>Our Mission</h2>
+        <h2>Who We Are</h2>
         <p>
-          Our mission is to provide dependable, compassionate transportation for individuals who
-          require assistance getting to and from medical appointments. We believe every rider
-          deserves safe, respectful, and timely service.
+          Noble Medic Wheels is a locally operated Non-Emergency Medical
+          Transportation (NEMT) provider serving King and Pierce County. We
+          specialize in dependable, on-time transportation for patients
+          requiring ambulatory or wheelchair-accessible rides.
+        </p>
+        <p>
+          Our mission is simple: ensure every rider arrives safely, comfortably,
+          and with dignity — every time.
         </p>
       </section>
 
       <section>
-        <h2>Who We Serve</h2>
+        <h2>What We Do</h2>
         <ul>
-          <li>Seniors and individuals with mobility challenges</li>
-          <li>Dialysis and recurring medical appointment patients</li>
-          <li>Hospitals, clinics, and care facilities</li>
-          <li>Medicaid and managed care brokers</li>
+          <li>Dialysis transportation</li>
+          <li>Wheelchair-accessible medical rides</li>
+          <li>Recurring medical appointments</li>
+          <li>Hospital discharges</li>
+          <li>Broker and facility coordination</li>
         </ul>
       </section>
 
       <section>
-        <h2>Our Standards</h2>
+        <h2>Our Commitment</h2>
         <p>
-          We operate with strict adherence to safety, compliance, and professionalism. Our drivers
-          are trained, screened, and committed to providing respectful assistance on every ride.
+          Every vehicle in our fleet is professionally maintained, sanitized,
+          and ADA-compliant. Our drivers are trained, courteous, and focused on
+          patient safety and punctuality.
+        </p>
+        <p>
+          We work closely with medical facilities, social workers, and brokers
+          to ensure seamless coordination and dependable service.
         </p>
       </section>
     </section>
