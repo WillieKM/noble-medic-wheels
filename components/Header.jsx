@@ -13,18 +13,26 @@ export default function Header() {
           Noble Medic Wheels
         </Link>
 
-        <button className="menu-toggle" onClick={() => setOpen(!open)}>
+        <button
+          className="menu-toggle"
+          onClick={() => setOpen(!open)}
+          aria-label="Toggle navigation"
+        >
           ☰
         </button>
 
-       <nav className={`nav ${open ? "open" : ""}`}>
-  <Link href="/">Home</Link>
-  <Link href="/about">About</Link>
-  <Link href="/services">Services</Link>
-  <Link href="/fleet">Fleet</Link>
-  <Link href="/service-area">Service Area</Link>
-  <Link href="/faq">FAQ</Link>
-  <Link href="/brokers">For Brokers</Link>
-  <Link href="/contact" className="btn-nav">Request a Ride</Link>
-</nav>
-
+        <nav className={`nav ${open ? "open" : ""}`}>
+          <Link href="/about">About</Link>
+          <Link href="/services">Services</Link>
+          <Link href="/fleet">Fleet</Link>
+          <Link href="/service-area">Service Area</Link>
+          <Link href="/faq">FAQ</Link>
+          <Link href="/brokers">For Brokers</Link>
+          <Link href="/contact" className="btn-nav">
+            Request a Ride
+          </Link>
+        </nav>
+      </div>
+    </header>
+  );
+}
