@@ -1,21 +1,13 @@
 import "./globals.css";
-import Header from "@/components/Header";
-import Footer from "@/components/Footer";
-
-export const metadata = {
-  title: "Noble Medic Wheels – NEMT Services in King & Pierce County",
-  description:
-    "Safe, reliable, and compassionate Non-Emergency Medical Transportation (NEMT) serving King & Pierce County.",
-  metadataBase: new URL("https://noblemedicwheels.com"),
-};
 
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body>
-        <Header />
-        <main className="container">{children}</main>
-        <Footer />
+        <div style={{ border: "4px solid red", padding: "20px" }}>
+          <h1>LAYOUT WRAPPER</h1>
+          {children}
+        </div>
       </body>
     </html>
   );

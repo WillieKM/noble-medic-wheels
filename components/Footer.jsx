@@ -7,12 +7,12 @@ export default function Footer() {
           <p>Safe, reliable, and compassionate NEMT services.</p>
         </div>
 
-        <div className="footer-links">
-          <a href="/services">Services</a>
-          <a href="/fleet">Fleet</a>
-          <a href="/brokers">For Brokers</a>
-          <a href="/contact">Contact</a>
-        </div>
+      <Link href="/services">Services</Link>
+<Link href="/fleet">Fleet</Link>
+<Link href="/brokers">For Brokers</Link>
+<Link href="/contact">Contact</Link>
+<Link href="/faq">FAQ</Link>
+
 
         <div className="footer-info">
           <p><strong>Phone:</strong> (your number)</p>
