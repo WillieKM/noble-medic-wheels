@@ -1,13 +1,14 @@
 "use client";
 
-import StickyCTA from "./StickyCTA";
-import Schema from "./Schema";
+import Header from "./Header";
+import Footer from "./Footer";
 
-export default function ClientShell() {
+export default function ClientShell({ children }) {
   return (
     <>
-      <Schema />
-      <StickyCTA />
+      <Header />
+      {children}
+      <Footer />
     </>
   );
 }
