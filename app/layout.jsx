@@ -4,8 +4,7 @@ import Footer from "../components/Footer";
 
 export const metadata = {
   title: "Noble Medic Wheels",
-  description:
-    "Safe, reliable, and compassionate non-emergency medical transportation.",
+  description: "Non-Emergency Medical Transportation",
 };
 
 export default function RootLayout({ children }) {
@@ -13,7 +12,7 @@ export default function RootLayout({ children }) {
     <html lang="en">
       <body>
         <Header />
-        <main className="container page">{children}</main>
+        <main style={{ padding: "24px" }}>{children}</main>
         <Footer />
       </body>
     </html>
