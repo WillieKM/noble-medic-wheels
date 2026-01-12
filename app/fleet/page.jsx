@@ -25,13 +25,4 @@ export default function FleetPage() {
     </section>
   );
 }
-// app/services/page.jsx
-import ServicesSection from "../../components/ServicesSection";
 
-export default function ServicesPage() {
-  return (
-    <section className="page">
-      <ServicesSection />
-    </section>
-  );
-}
