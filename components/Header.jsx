@@ -13,11 +13,7 @@ export default function Header() {
           Noble Medic Wheels
         </Link>
 
-        <button
-          className="menu-toggle"
-          aria-label="Toggle menu"
-          onClick={() => setOpen(!open)}
-        >
+        <button className="menu-toggle" onClick={() => setOpen(!open)}>
           ☰
         </button>
 
@@ -29,7 +25,11 @@ export default function Header() {
           <Link href="/service-area" onClick={() => setOpen(false)}>Service Area</Link>
           <Link href="/faq" onClick={() => setOpen(false)}>FAQ</Link>
           <Link href="/brokers" onClick={() => setOpen(false)}>For Brokers</Link>
-          <Link href="/contact" className="btn-nav" onClick={() => setOpen(false)}>
+          <Link
+            href="/contact"
+            className="btn-nav"
+            onClick={() => setOpen(false)}
+          >
             Request a Ride
           </Link>
         </nav>
