@@ -1,14 +1,15 @@
 import "./globals.css";
-import Header from "../components/Header";
-import Footer from "../components/Footer";
+import ClientShell from "../components/ClientShell";
 
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body>
-        <Header />
-        <main className="container page">{children}</main>
-        <Footer />
+        <ClientShell>
+          <main className="container page">
+            {children}
+          </main>
+        </ClientShell>
       </body>
     </html>
   );
