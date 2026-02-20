@@ -2,7 +2,7 @@
 export default function Hero() {
   return (
     <section className="hero">
-      <h1>Safe, Reliable, and Compassionate NEMT Services</h1>
+     <h1>TEST: IS THIS WORKING?</h1>
       <p>Serving King & Pierce County with dignity, punctuality, and care.</p>
 
       <div className="hero-buttons">
